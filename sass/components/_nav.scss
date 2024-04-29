@@ -1,0 +1,29 @@
+
+.navbar{
+    background-color: rgb(113, 99, 99);
+    width:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index: 1;
+    .navbar-brand{
+        color:red;
+    }
+    .nav-item{
+        .nav-link{
+            color:white;
+        }
+    }
+}
+.bg{
+    background-color: black;
+    animation: ami 2s;
+}
+@keyframes ami{
+    0%{
+        top:-30px;
+    }
+    100%{
+        top:-0px;
+    }
+}

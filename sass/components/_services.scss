@@ -1,0 +1,79 @@
+.service {
+    position: relative;
+    width: 100%;
+    padding: 45px 0 15px;
+    .text-center{
+        margin-bottom:50px;
+    }
+
+    .section-header p {
+        display: inline-block;
+        margin: 0 30px;
+        margin-bottom: 10px;
+        padding-left: 15px;
+        position: relative;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        background: #fff;
+        &::before{
+            position: absolute;
+            content: "";
+            height: 3px;
+            top: 11px;
+            right: 0;
+            left: -30px;
+            background: #EF233C;
+            z-index: -1;
+        }
+    }
+
+     .service-item {
+        position: relative;
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+        box-shadow: inset 0 0 0 0 transparent;
+        transition: ease-out 0.5s;
+        &:hover{
+            box-shadow: inset 800px 0 0 0 #EF233C
+        }
+       .service-icon {
+            position: relative;
+            width: 150px;
+            min-height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 1px solid #EF233C;
+            background: #fff;
+             i {
+                position: relative;
+                font-size: 60px;
+                color: #EF233C;
+                transition: .3s;
+                &:hover{
+                    font-size: 75px
+                }
+        
+            }
+        }
+    .service-text {
+            position: relative;
+            width: calc(100% - 120px);
+            padding: 0 30px;
+            h3 {
+                margin-bottom: 10px;
+                font-size: 20px;
+                font-weight: 600;
+                transition: 1s;
+            }
+      p {
+                margin: 0;
+                font-size: 16px;
+                transition: 1s;
+            }
+        }
+    }
+}

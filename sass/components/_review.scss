@@ -1,0 +1,53 @@
+#review{
+    .review_titel{
+        position: relative;
+        text-align: center;
+        span{
+            font-size:30px;
+            padding: 0px 0px 0px 0px;
+            display:inline-block;
+            &::before{
+                position:absolute;
+                content:"";
+                background-color: red;
+                height:3px;
+                bottom:35px;
+                transition:0.5s;
+            }
+            &:hover::before{
+                width:90px;
+            }
+        
+        }
+    }
+    margin-top:40px;
+    .review_box{
+      
+        .custom_box{
+            display:flex;
+            padding:15px;
+            background-color: aqua;
+            border-radius: 7px;
+            .left_review{
+                width:30%;
+                border-right:1px solid black;
+                text-align:center;
+                img{
+                    border-radius:50%;
+                }
+            }
+            .right_review{
+                width:70%;
+                padding:12px;
+                .review_icon{
+                    i{
+                        font-size:35px;
+                    }
+                }
+                p{
+                    font-weight:bold;
+                }
+            }
+        }
+    }
+}
